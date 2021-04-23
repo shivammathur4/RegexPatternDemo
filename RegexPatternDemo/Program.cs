@@ -9,7 +9,7 @@ namespace RegexPatternDemo
             pattern pattern = new pattern();
             //bool result=pattern.validatePinCode("abc-100-100@.nt.in");
             //bool result = pattern.validatePinCode("400 088");
-            bool result = pattern.validatePinCode("abc@bridgelabz.com");
+            bool result = pattern.validatePinCode("abc.xyz@bridgelabz.co.in");
             Console.WriteLine(result);
             Console.ReadKey();
 
