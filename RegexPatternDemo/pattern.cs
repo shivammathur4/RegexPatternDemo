@@ -15,7 +15,8 @@ namespace RegexPatternDemo
         //string Regex_Pincode = "^[0-9]{0,}[a-zA-Z]{3,}[a-zA-Z0-9]*$";
         //string Regex_Pincode = "^[1-9][0-9]{5}$";
         //string Regex_Pincode = "^[1-9][0-9]{2}[ ]*[0-9]{3}$";
-        string Regex_Pincode = "^[a-z0-9A-Z]+[@][a-zA-Z]+[.][a-zA-Z]{2,3}$";
+        //string Regex_Pincode = "^[a-z0-9A-Z]+[@][a-zA-Z]+[.][a-zA-Z]{2,3}$";
+        string Regex_Pincode = "^[a-z0-9A-Z]+([.#@_][a-zA-Z0-9]+)?[@][a-zA-Z]+[.][a-zA-Z]{2,3}([.][a-zA-Z]{2,2})?$";
         public bool validatePinCode(string input)
         {
             return Regex.IsMatch(input, Regex_Pincode);
